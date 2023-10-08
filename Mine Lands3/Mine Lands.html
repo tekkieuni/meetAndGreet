@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="Mine Lands.css">
+  <link rel="stylesheet" href="/css/TU.css">
+  <link rel="stylesheet" href="/css/home.css">
+</head>
+<body style="height: 100%;">
+  <div class="TU-top">
+    <div class="TU-bar TU-orange TU-card TU-left-align TU-large">
+      <img id="myLogo" class="TU-bar-item TU-orange" style="width: 80px;" src="https://tekkieuni.com/wp-content/themes/tekkie/images/logo-color.png.webp" alt="logo">
+      <a href="/index.html" class="TU-bar-item TU-button TU-padding-large TU-orange" >Home</a>
+      <!-- <a href="#scratch" class="TU-bar-item TU-button TU-padding-large TU-white">Scratch Games</a> -->
+
+      <!-- <a href="scratchIndex.html" class="TU-bar-item TU-button TU-padding-large TU-white">Scratch Games</a> -->
+      <!-- <a href="#livecode" class="TU-bar-item TU-button TU-padding-large TU-white">Live-Code Apps</a> -->
+
+    </div>
+</div>
+  <h1 id="title">Mine Lands</h1>
+
+  <div id="wrapper" >
+    <div class="loader" id="loader"></div>
+
+    <canvas  id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+  </div>
+
+  <script type="text/javascript">
+
+    var Module = { canvas: document.getElementById('canvas')  };
+    // Function to hide the loader
+    function hideLoader() {
+        var loader = document.getElementById("loader");
+        loader.classList.add("hidden");
+    }
+
+    // Hide the loader after 3 seconds (adjust as needed)
+    setTimeout(hideLoader, 3000); // 3000 milliseconds = 3 seconds
+
+  </script>
+
+ <script async type="text/javascript" src="standalone-9.6.8.js"></script>
+</body>
+</html>
+
